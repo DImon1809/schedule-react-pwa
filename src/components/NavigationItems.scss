@@ -1,0 +1,10 @@
+.nav-items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+  li:active h4 {
+    color: red;
+  }
+}

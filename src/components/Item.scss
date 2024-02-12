@@ -1,0 +1,61 @@
+:root {
+  --size-p-active: 20px;
+
+  @media (max-width: 480px) {
+    & {
+      --size-p-active: 18px;
+    }
+  }
+}
+
+.numerator {
+  color: red;
+
+  &.opacity {
+    opacity: 0.5;
+    font-size: 14px;
+    color: black;
+  }
+
+  &.active {
+    font-size: var(--size-p-active);
+    font-weight: 900;
+  }
+}
+
+.denominator {
+  color: lime;
+
+  &.opacity {
+    opacity: 0.5;
+    font-size: 14px;
+    color: black;
+  }
+
+  &.active {
+    font-size: var(--size-p-active);
+    font-weight: 900;
+  }
+}
+
+.item {
+  width: 96%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-bottom: 1px solid #fff;
+  margin: 0 auto;
+}
+
+.date-divider {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &.red {
+    color: red;
+  }
+
+  &.lime {
+    color: lime;
+  }
+}
